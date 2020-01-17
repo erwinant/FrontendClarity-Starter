@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/color.scss";
+
+.login-wrapper {
+  background: url(https://www.build-review.com/wp-content/uploads/2019/06/Travel.jpg) !important;
+  background-position-x: center !important;
+  background-position-y: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-origin: initial !important;
+  background-clip: initial !important;
+  background-color: initial !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.btn.btn-primary {
+  border-color: $acset-color;
+  background-color: $acset-color;
+}
+
+.main-container .header,
+.main-container header {
+  background-color: $acset-color;
+}
+
+.branding {
+  background-color: $acset-color;
+}
+
+.loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: $acset-color transparent $acset-color transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
